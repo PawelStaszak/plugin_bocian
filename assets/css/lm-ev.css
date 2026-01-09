@@ -1,0 +1,70 @@
+/* Minimal CSS for LM EV UI (additive) */
+.lm-ev-wrap{
+  max-width:760px;
+  margin:20px auto;
+  padding:16px;
+  border:1px solid #eee;
+  border-radius:10px;
+  background:#fff;
+}
+.lm-ev-title{ margin-top:0; }
+.lm-ev-form{ display:flex; gap:10px; align-items:flex-end; flex-wrap:wrap; }
+.lm-ev-field{ flex:1; min-width:240px; }
+.lm-ev-label{ display:block; font-weight:700; margin-bottom:6px; }
+.lm-ev-input{ width:100%; padding:10px; border:1px solid #ddd; border-radius:6px; }
+.lm-ev-btn{ padding:10px 14px; border-radius:6px; font-weight:800; border:0; cursor:pointer; text-decoration:none; display:inline-flex; align-items:center; justify-content:center; }
+.lm-ev-btn--primary{ background:#f9b234; color:#111; }
+.lm-ev-btn--dark{ background:#111; color:#fff; }
+.lm-ev-btn--light{ background:#eee; color:#111; }
+.lm-ev-muted{ color:#666; }
+.lm-ev-section{ margin-top:16px; }
+.lm-ev-h3{ margin:0 0 10px; }
+.lm-ev-msg{ font-weight:700; margin:10px 0; }
+.lm-ev-msg--err{ color:#b00020; }
+.lm-ev-msg--ok{ color:#0a7a2f; }
+.lm-ev-addons{ display:grid; grid-template-columns:1fr; gap:10px; }
+.lm-ev-addon{
+  display:flex;
+  justify-content:space-between;
+  gap:12px;
+  align-items:center;
+  padding:12px;
+  border:1px solid #eee;
+  border-radius:10px;
+}
+.lm-ev-addon__left{ display:flex; gap:10px; align-items:center; }
+.lm-ev-addon__img{ width:48px; height:auto; border-radius:8px; }
+.lm-ev-addon__meta{ display:flex; flex-direction:column; gap:2px; }
+.lm-ev-addon__desc{ color:#666; font-size:12px; font-weight:500; }
+.lm-ev-addon__price{ font-weight:800; white-space:nowrap; }
+.lm-ev-actions{ margin-top:12px; display:flex; gap:10px; flex-wrap:wrap; }
+
+/* Date grid */
+.lm-ev-dategrid{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap:10px;
+}
+@media (max-width: 640px){
+  .lm-ev-dategrid{
+    grid-template-columns: 1fr;
+  }
+}
+
+.lm-calendar-wrapper {
+    margin-top: 16px;
+}
+
+#lm-ev-calendar {
+    width: 100%;
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #fff;
+    cursor: pointer;
+}
+
+.flatpickr-day.disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
